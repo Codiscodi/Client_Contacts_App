@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Sarabun', sans-serif;
+    color: #474648;
+}
+
+input {
+    outline: none;
+    font-family: 'Sarabun', sans-serif;
+    color: #474648;
+}
+
+button {
+    outline: none;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.btnGreen {
+    border: 1px solid #48ba16;
+    background: #48ba16;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(72, 186, 22, 0.4);
+}
+
+.btnGreen:hover {
+    background: #56de1a;
+    border: 1px solid #56de1a;
+    box-shadow: none;
+}
+
+.btnBlue {
+    border: 1px solid #308af3;
+    background: #308af3;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(48, 138, 243, 0.4);
+}
+
+.btnBlue:hover {
+    background: #57a0f5;
+    border: 1px solid #57a0f5;
+    box-shadow: none;
 }

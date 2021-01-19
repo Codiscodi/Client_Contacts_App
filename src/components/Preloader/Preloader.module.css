@@ -1,0 +1,108 @@
+.wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.wrapper .loader {
+    width: 172px;
+    height: 128px;
+}
+
+.element {
+    position: relative;
+}
+.element:nth-child(1) {
+    margin-left: 0px;
+}
+.element:nth-child(2) {
+    margin-left: 44px;
+}
+.element:nth-child(3) {
+    margin-left: 88px;
+}
+.element:nth-child(4) {
+    margin-left: 132px;
+}
+
+.element span {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    height: 36px;
+    width: 36px;
+    border-radius: 2px;
+    background: linear-gradient(45deg, #0066ff, #7096fc);
+}
+
+.element span:nth-child(1) {
+    top: 0px;
+}
+.element span:nth-child(2) {
+    top: 44px;
+}
+.element span:nth-child(3) {
+    top: 88px;
+}
+
+.element:nth-child(1) span {
+    animation: animatebox1 2s infinite ease-in;
+}
+
+.element:nth-child(2) span {
+    animation: animatebox2 2s infinite ease-in;
+}
+.element:nth-child(3) span {
+    animation: animatebox3 2s infinite ease-in;
+}
+.element:nth-child(4) span {
+    animation: animatebox4 2s infinite ease-in;
+}
+
+.element span:nth-child(1) {
+    animation-delay: 0.00s;
+}
+.element span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+.element span:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+@keyframes animatebox1 {
+    0%, 5%, 95%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    30%, 70% {
+        transform: translate(-40px, 0px) rotate(-90deg);
+    }
+}
+
+@keyframes animatebox2 {
+    0%, 10%, 90%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    35%, 65% {
+        transform: translate(-40px, 0px) rotate(-90deg);
+    }
+}
+@keyframes animatebox3 {
+    0%, 15%, 85%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    40%, 60% {
+        transform: translate(-40px, 0px) rotate(-90deg);
+    }
+}
+@keyframes animatebox4 {
+    0%, 20%, 80%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    45%, 55% {
+        transform: translate(-40px, 0px) rotate(-90deg);
+    }
+}

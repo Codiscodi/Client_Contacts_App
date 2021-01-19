@@ -1,0 +1,53 @@
+.wrapper {
+    padding: 1rem;
+    transition: .25s;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    grid-gap: .2rem;
+}
+
+.top button {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .05rem solid #474648;
+    border-radius: .2rem;
+    background: none;
+}
+
+.top button:hover {
+    border-radius: 1rem;
+}
+
+.btnFavorite:hover {
+    color: orange;
+    border-color: orange;
+}
+
+.btnChange:hover {
+    color: #3a52ff;
+    border-color: #3a52ff;
+}
+
+.btnDelete:hover {
+    color: orangered;
+    border-color: orangered;
+}
+
+.wrapper:hover {
+    background: #f5f5f5;
+}
+
+.contacts {
+
+}
+
+.contacts i {
+    margin-right: .5rem;
+    opacity: .5;
+}

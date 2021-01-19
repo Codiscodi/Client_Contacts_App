@@ -1,0 +1,25 @@
+.inputGroup {
+    display: grid;
+    grid-gap: 0.3rem;
+}
+
+.inputGroup label {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.inputGroup input {
+    border: 2px solid #ebebeb;
+    border-radius: 1rem;
+    padding: 4px 12px;
+    color: #474648;
+    transition: 0.3s;
+}
+
+.inputGroup input:hover {
+    border-color: #697bff;
+}
+
+.inputGroup input:focus {
+    border-color: #3a52ff;
+}

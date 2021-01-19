@@ -1,0 +1,21 @@
+.wrapper {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.logout {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.logout:hover {
+    color: #999;
+}

@@ -1,0 +1,55 @@
+.wrapper {
+    height: 100vh;
+    background: linear-gradient(to bottom, #3a52ff 30%, #0017ba 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: .4rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.boxTitle {
+    display: grid;
+    grid-gap: 0.5rem;
+    justify-items: center;
+}
+
+.boxTitle h1 {
+    color: #3a52ff;
+    font-size: 22px;
+}
+
+.boxTitle span {
+    height: 0.2rem;
+    background: #3a52ff;
+    width: 3rem;
+    margin-top: 0.7rem;
+}
+
+
+.form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.buttons button {
+    border-radius: 0.8rem;
+}

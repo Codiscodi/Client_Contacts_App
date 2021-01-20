@@ -27,7 +27,7 @@ export const contactsCreateNewContact = (token, userData) => {
                 dispatch(contactsSetNewContact(res.data.contact))
                 dispatch(contactsCleanActiveContact())
             })
-            .catch(err => console.log(err))
+            .catch(err => dispatch(appAddAlertMessage('error', err.response.data.message)))
         await dispatch(appLoadingHidden())
     }
 }
@@ -85,9 +85,10 @@ export const contactsUpdateContact = (contact, token) => {
             .then(res => {
                 dispatch(appAddAlertMessage('info', res.data.message))
                 dispatch({type: CONTACTS_UPDATE_CONTACT, payload: contact})
+                dispatch(contactDeactivateChange())
             })
-            .catch(err => console.log(err))
-        await dispatch(contactDeactivateChange())
+            .catch(err => dispatch(appAddAlertMessage('error', err.response.data.message)))
+
         await dispatch(appLoadingHidden())
     }
 }

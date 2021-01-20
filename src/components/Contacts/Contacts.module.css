@@ -71,6 +71,11 @@
     transition: .5s;
 }
 
+.list {
+    overflow-y: auto;
+    height: 18rem;
+}
+
 .list li {
     border: .1rem solid #f5f5f5;
 }

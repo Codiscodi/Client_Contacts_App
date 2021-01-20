@@ -58,3 +58,23 @@ ul {
     border: 1px solid #57a0f5;
     box-shadow: none;
 }
+::-webkit-scrollbar {
+    width: .3rem;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #57a0f5;
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3a52ff;
+}
